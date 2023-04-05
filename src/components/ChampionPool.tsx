@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { characters } from '../characters'
 
 export default function ChampionPool() {
@@ -11,14 +12,13 @@ export default function ChampionPool() {
         }
       }
     }
-  
 
     return (
       <div className="">
           <div className='grid grid-rows-2 grid-flow-col gap-4 w-96'>
             {characterImgs.map((characterImg, idx) => (
               <div key={idx} draggable={true} className='cursor-grab'>
-                {characterImg ? <img src={characterImg} /> : <></>}
+                {characterImg ? <Image src={characterImg} alt="character img" width={100} height={100} /> : <></>}
               </div>
               ))}
           </div>

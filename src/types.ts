@@ -15,3 +15,6 @@ export type Character = {
     }
   }
 
+export type Props = {
+    margin : string
+}
