@@ -14,10 +14,10 @@ export default function ChampionPool() {
   
 
     return (
-      <div className="champion-pool-container">
-          <div className='characters'>
+      <div className="">
+          <div className='grid grid-rows-2 grid-flow-col gap-4 w-96'>
             {characterImgs.map((characterImg, idx) => (
-              <div key={idx} draggable={true} className='character-img'>
+              <div key={idx} draggable={true} className='cursor-grab'>
                 {characterImg ? <img src={characterImg} /> : <></>}
               </div>
               ))}
